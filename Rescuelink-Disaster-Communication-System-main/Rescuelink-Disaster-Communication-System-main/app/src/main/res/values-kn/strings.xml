@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    UI-06: Kannada (kn) translation of the primary user-facing strings.
+    Any string not overridden here falls back to values/strings.xml.
+-->
+<resources>
+    <string name="app_name">RescueLink</string>
+    <string name="sos_title">SOS ತುರ್ತುಸ್ಥಿತಿ</string>
+    <string name="sos_button_text">SOS ಕಳುಹಿಸಿ</string>
+    <string name="sos_subtitle">ಹತ್ತಿರದ ಸಾಧನಗಳಿಗೆ ತುರ್ತು ಎಚ್ಚರಿಕೆಯನ್ನು ರವಾನಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="chat_title">ಮೆಶ್ ಚಾಟ್</string>
+    <string name="chat_hint">ಸಂದೇಶವನ್ನು ಟೈಪ್ ಮಾಡಿ…</string>
+    <string name="map_title">ವಿಪತ್ತು ನಕ್ಷೆ</string>
+    <string name="contacts_title">ತುರ್ತು ಸಂಪರ್ಕಗಳು</string>
+    <string name="home_title">RescueLink</string>
+    <string name="home_subtitle">ಆಫ್‌ಲೈನ್ ವಿಪತ್ತು ಸಂವಹನ</string>
+    <string name="no_messages">ಇನ್ನೂ ಸಂದೇಶಗಳಿಲ್ಲ. ಮೆಶ್ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಚಾಟ್ ಪ್ರಾರಂಭಿಸಿ!</string>
+    <string name="no_alerts">ಯಾವುದೇ ತುರ್ತು ಎಚ್ಚರಿಕೆಗಳು ಸ್ವೀಕರಿಸಲಾಗಿಲ್ಲ.</string>
+    <string name="connected_devices">ಸಂಪರ್ಕಿತ ಸಾಧನಗಳು</string>
+    <string name="recent_alerts">ಇತ್ತೀಚಿನ ಎಚ್ಚರಿಕೆಗಳು</string>
+    <string name="send">ಕಳುಹಿಸಿ</string>
+    <string name="cancel">ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="save">ಉಳಿಸಿ</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="low_battery_warning">ಬ್ಯಾಟರಿ ಕಡಿಮೆ! ತುರ್ತು ಮೋಡ್ ಸಕ್ರಿಯಗೊಂಡಿದೆ.</string>
+    <string name="permission_required">RescueLink ಕೆಲಸ ಮಾಡಲು ಅನುಮತಿಗಳು ಅಗತ್ಯವಿದೆ</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">RescueLink ಗೆ ಸ್ವಾಗತ</string>
+    <string name="onboarding_next">ಮುಂದೆ</string>
+    <string name="onboarding_grant">ಅನುಮತಿಗಳನ್ನು ನೀಡಿ</string>
+    <string name="profile_name_hint">ಪ್ರದರ್ಶನ ಹೆಸರು</string>
+    <string name="profile_blood_hint">ರಕ್ತ ಗುಂಪು (ಐಚ್ಛಿಕ)</string>
+    <string name="profile_medical_hint">ವೈದ್ಯಕೀಯ ಟಿಪ್ಪಣಿ (ಐಚ್ಛಿಕ)</string>
+
+    <!-- Mesh status -->
+    <string name="mesh_off">ಮೆಶ್ ಆಫ್</string>
+    <string name="mesh_searching">ಹತ್ತಿರದ ಸಾಧನಗಳಿಗಾಗಿ ಹುಡುಕಲಾಗುತ್ತಿದೆ…</string>
+    <string name="mesh_active">ಮೆಶ್ ಸಕ್ರಿಯ — %1$d ಹತ್ತಿರದಲ್ಲಿ</string>
+    <string name="nearby_devices_title">ಹತ್ತಿರದ ಸಾಧನಗಳು</string>
+
+    <!-- Settings -->
+    <string name="settings_title">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="settings_profile">ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ</string>
+    <string name="settings_mesh_toggle">ಮೆಶ್ ನೆಟ್‌ವರ್ಕಿಂಗ್</string>
+    <string name="settings_battery_saver">ಬ್ಯಾಟರಿ ಸೇವರ್</string>
+    <string name="settings_clear_history">ಸಂದೇಶ ಇತಿಹಾಸವನ್ನು ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="settings_save">ಪ್ರೊಫೈಲ್ ಉಳಿಸಿ</string>
+
+    <!-- SOS lifecycle -->
+    <string name="sos_hold_hint">ತುರ್ತು ಎಚ್ಚರಿಕೆ ಕಳುಹಿಸಲು ಬಟನ್ ಅನ್ನು 3 ಸೆಕೆಂಡುಗಳ ಕಾಲ ಒತ್ತಿ ಹಿಡಿಯಿರಿ</string>
+    <string name="sos_holding">ಒತ್ತಿ ಹಿಡಿಯಿರಿ…</string>
+    <string name="sos_undo">ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="sos_im_safe">ನಾನು ಸುರಕ್ಷಿತವಾಗಿದ್ದೇನೆ</string>
+    <string name="sos_resend">SOS ಮತ್ತೆ ಕಳುಹಿಸಿ</string>
+    <string name="sos_acknowledge">ನಾನು ಸ್ಪಂದಿಸುತ್ತಿದ್ದೇನೆ</string>
+
+    <!-- Quick templates -->
+    <string name="tmpl_trapped">ಸಿಲುಕಿಕೊಂಡಿದ್ದೇನೆ, ಸಹಾಯ ಬೇಕು</string>
+    <string name="tmpl_water_food">ನೀರು/ಆಹಾರ ಬೇಕು</string>
+    <string name="tmpl_injured">ಗಾಯಗೊಂಡಿದ್ದೇನೆ, ಚಲಿಸಲಾಗುತ್ತಿಲ್ಲ</string>
+    <string name="tmpl_safe_shelter">ಸುರಕ್ಷಿತ, ಇಲ್ಲಿ ಆಶ್ರಯ ಪಡೆದಿದ್ದೇನೆ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">ಮುಖಪುಟ</string>
+    <string name="nav_sos">SOS</string>
+    <string name="nav_chat">ಚಾಟ್</string>
+    <string name="nav_map">ನಕ್ಷೆ</string>
+    <string name="nav_contacts">ಸಂಪರ್ಕಗಳು</string>
+</resources>

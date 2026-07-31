@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    UI-06: Tamil (ta) translation of the primary user-facing strings.
+    Any string not overridden here falls back to values/strings.xml.
+-->
+<resources>
+    <string name="app_name">RescueLink</string>
+    <string name="sos_title">SOS அவசரநிலை</string>
+    <string name="sos_button_text">SOS அனுப்பு</string>
+    <string name="sos_subtitle">அருகிலுள்ள சாதனங்களுக்கு அவசர எச்சரிக்கையை அனுப்ப தட்டவும்</string>
+    <string name="chat_title">மெஷ் அரட்டை</string>
+    <string name="chat_hint">செய்தியை உள்ளிடவும்…</string>
+    <string name="map_title">பேரிடர் வரைபடம்</string>
+    <string name="contacts_title">அவசர தொடர்புகள்</string>
+    <string name="home_title">RescueLink</string>
+    <string name="home_subtitle">ஆஃப்லைன் பேரிடர் தொடர்பு</string>
+    <string name="no_messages">இன்னும் செய்திகள் இல்லை. மெஷ் நெட்வொர்க்கில் அரட்டையைத் தொடங்கவும்!</string>
+    <string name="no_alerts">அவசர எச்சரிக்கைகள் எதுவும் பெறப்படவில்லை.</string>
+    <string name="connected_devices">இணைக்கப்பட்ட சாதனங்கள்</string>
+    <string name="recent_alerts">சமீபத்திய எச்சரிக்கைகள்</string>
+    <string name="send">அனுப்பு</string>
+    <string name="cancel">ரத்து செய்</string>
+    <string name="save">சேமி</string>
+    <string name="delete">நீக்கு</string>
+    <string name="low_battery_warning">பேட்டரி குறைவு! அவசர பயன்முறை செயல்படுத்தப்பட்டது.</string>
+    <string name="permission_required">RescueLink செயல்பட அனுமதிகள் தேவை</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">RescueLink-க்கு வரவேற்கிறோம்</string>
+    <string name="onboarding_next">அடுத்து</string>
+    <string name="onboarding_grant">அனுமதிகளை வழங்கு</string>
+    <string name="profile_name_hint">காட்சிப் பெயர்</string>
+    <string name="profile_blood_hint">இரத்த வகை (விருப்பம்)</string>
+    <string name="profile_medical_hint">மருத்துவக் குறிப்பு (விருப்பம்)</string>
+
+    <!-- Mesh status -->
+    <string name="mesh_off">மெஷ் அணைந்துள்ளது</string>
+    <string name="mesh_searching">அருகிலுள்ள சாதனங்கள் தேடப்படுகின்றன…</string>
+    <string name="mesh_active">மெஷ் செயலில் — %1$d அருகில்</string>
+    <string name="nearby_devices_title">அருகிலுள்ள சாதனங்கள்</string>
+
+    <!-- Settings -->
+    <string name="settings_title">அமைப்புகள்</string>
+    <string name="settings_profile">சுயவிவரத்தைத் திருத்து</string>
+    <string name="settings_mesh_toggle">மெஷ் நெட்வொர்க்கிங்</string>
+    <string name="settings_battery_saver">பேட்டரி சேமிப்பான்</string>
+    <string name="settings_clear_history">செய்தி வரலாற்றை அழி</string>
+    <string name="settings_save">சுயவிவரத்தைச் சேமி</string>
+
+    <!-- SOS lifecycle -->
+    <string name="sos_hold_hint">அவசர எச்சரிக்கையை அனுப்ப பொத்தானை 3 வினாடிகள் அழுத்திப் பிடிக்கவும்</string>
+    <string name="sos_holding">பிடித்திருக்கவும்…</string>
+    <string name="sos_undo">செயல்தவிர்</string>
+    <string name="sos_im_safe">நான் பாதுகாப்பாக இருக்கிறேன்</string>
+    <string name="sos_resend">SOS மீண்டும் அனுப்பு</string>
+    <string name="sos_acknowledge">நான் உதவுகிறேன்</string>
+
+    <!-- Quick templates -->
+    <string name="tmpl_trapped">சிக்கிக்கொண்டேன், உதவி தேவை</string>
+    <string name="tmpl_water_food">தண்ணீர்/உணவு தேவை</string>
+    <string name="tmpl_injured">காயமடைந்தேன், நகர முடியவில்லை</string>
+    <string name="tmpl_safe_shelter">பாதுகாப்பாக, இங்கே தங்கியுள்ளேன்</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">முகப்பு</string>
+    <string name="nav_sos">SOS</string>
+    <string name="nav_chat">அரட்டை</string>
+    <string name="nav_map">வரைபடம்</string>
+    <string name="nav_contacts">தொடர்புகள்</string>
+</resources>

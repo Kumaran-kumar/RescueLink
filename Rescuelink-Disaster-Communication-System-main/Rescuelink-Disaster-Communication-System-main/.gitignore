@@ -1,0 +1,33 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.vscode/
+
+# Antigravity / tooling files (not part of the app)
+SKILL.md
+generate_pitch.py
+RescueLink_Pitch.pptx
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Ignore Gradle build output
+build/
+app/build/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Crashlytics cache
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties

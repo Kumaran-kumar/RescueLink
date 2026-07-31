@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    RescueLink Android Manifest
+    This file defines the application components, permissions, and hardware requirements
+    for the RescueLink emergency mesh networking application.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Network Permissions:
+        Used by osmdroid to download and cache map tiles when internet is available.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--
+        Location Permissions:
+        Required for showing the user's position on the map and for the Nearby Connections
+        API to discover other devices via Bluetooth/Wi-Fi.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!--
+        Bluetooth Permissions:
+        Necessary for the mesh network to establish peer-to-peer connections
+        between devices for message relaying without cellular service.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <!--
+        Wi-Fi Permissions:
+        Enables Wi-Fi Direct (P2P) for higher bandwidth communication between mesh nodes.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"
+        android:usesPermissionFlags="neverForLocation" />
+
+    <!--
+        Service & System Permissions:
+        Allows the MeshNetworkService to run in the foreground with a persistent notification,
+        ensuring reliable message delivery even when the device is locked.
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".RescueLinkApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RescueLink"
+        tools:targetApi="34">
+
+        <!-- Activities Section -->
+
+        <!-- Launcher entry point: first-run onboarding, then Home (FEAT-01).
+             Uses the Android 12 SplashScreen theme (UI-05). -->
+        <activity
+            android:name=".ui.OnboardingActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.RescueLink.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Displays network status and quick access to features -->
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+
+        <!-- Settings: edit profile, mesh toggle, battery saver, clear history (FEAT-08) -->
+        <activity android:name=".ui.SettingsActivity"
+            android:label="@string/settings_title" />
+
+        <!-- Emergency SOS broadcast screen -->
+        <activity android:name=".ui.SOSActivity"
+            android:label="SOS Emergency" />
+
+        <!-- Offline mesh messaging interface -->
+        <activity android:name=".ui.ChatActivity"
+            android:label="Mesh Chat" />
+
+        <!-- Offline-first disaster map for situational awareness -->
+        <activity android:name=".ui.MapActivity"
+            android:label="Disaster Map" />
+
+        <!-- Emergency contact management -->
+        <activity android:name=".ui.EmergencyContactsActivity"
+            android:label="Emergency Contacts" />
+
+        <!-- Saved places (offline bearing + distance) -->
+        <activity android:name=".ui.SavedPlacesActivity"
+            android:label="@string/saved_places_title" />
+
+        <!--
+            Mesh Network Foreground Service:
+            Handles the background lifecycle of the peer-to-peer mesh network,
+            including discovery, connection management, and message relaying.
+        -->
+        <service
+            android:name=".service.MeshNetworkService"
+            android:exported="false"
+            android:foregroundServiceType="connectedDevice" />
+
+    </application>
+</manifest>

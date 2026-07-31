@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">RescueLink</string>
+    <string name="sos_title">SOS Emergency</string>
+    <string name="sos_button_text">SEND SOS</string>
+    <string name="sos_subtitle">Tap to broadcast emergency alert to nearby devices</string>
+    <string name="chat_title">Mesh Chat</string>
+    <string name="chat_hint">Type a message…</string>
+    <string name="map_title">Disaster Map</string>
+    <string name="contacts_title">Emergency Contacts</string>
+    <string name="home_title">RescueLink</string>
+    <string name="home_subtitle">Offline Disaster Communication</string>
+    <string name="no_messages">No messages yet. Start chatting on the mesh network!</string>
+    <string name="no_alerts">✅ No active emergencies nearby. You\'re connected and ready to help.</string>
+    <string name="connected_devices">Connected Devices</string>
+    <string name="recent_alerts">Recent Alerts</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="emergency_flood">🌊 Flood</string>
+    <string name="emergency_earthquake">🏚️ Earthquake</string>
+    <string name="emergency_fire">🔥 Fire</string>
+    <string name="emergency_medical">🏥 Medical</string>
+    <string name="emergency_cyclone">🌀 Cyclone</string>
+    <string name="emergency_other">⚠️ Other</string>
+    <string name="low_battery_warning">Low battery! Emergency mode activated.</string>
+    <string name="mesh_service_channel">RescueLink Mesh Service</string>
+    <string name="mesh_service_title">RescueLink Active</string>
+    <string name="mesh_service_text">Mesh network is running. Discovering nearby devices…</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_sos">SOS</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_contacts">Contacts</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="contact_name_hint">Full Name</string>
+    <string name="contact_phone_hint">Phone Number</string>
+    <string name="contact_relation_hint">Relationship</string>
+    <string name="sos_sent_success">🚨 SOS Alert Broadcasted!</string>
+    <string name="location_unavailable">Location unavailable</string>
+    <string name="permission_required">Permissions are required for RescueLink to work</string>
+    <string name="back">Back</string>
+    <string name="_0_peers">0 peers</string>
+    <string name="bk">➤</string>
+    <!-- TASK-09: incoming SOS notification -->
+    <string name="sos_channel_name">Incoming SOS Alerts</string>
+    <string name="sos_channel_desc">High-priority alerts when a nearby person sends an SOS</string>
+    <string name="sos_incoming_title">🚨 Incoming SOS</string>
+    <string name="sos_incoming_text">%1$s needs help: %2$s</string>
+    <!-- TASK-08: guard against missing location -->
+    <string name="sos_location_unavailable_warning">Location unavailable — SOS not sent. Enable location and try again.</string>
+    <!-- TASK-10: honest triage labeling -->
+    <string name="triage_applied">Keyword triage applied: %1$s</string>
+    <string name="describe_situation_label">Describe Situation (offline keyword triage)</string>
+
+    <!-- FEAT-01: onboarding -->
+    <string name="onboarding_welcome_title">Welcome to RescueLink</string>
+    <string name="onboarding_welcome_body">Send SOS alerts and chat with people near you — no internet, no cell signal needed. RescueLink builds a device-to-device mesh so your message hops from phone to phone until it reaches help.</string>
+    <string name="onboarding_profile_title">Your profile</string>
+    <string name="onboarding_profile_body">This travels with your SOS so responders know who you are and any medical needs. Only your name is required.</string>
+    <string name="onboarding_perm_title">A few permissions</string>
+    <string name="onboarding_perm_body">• Location — required to discover nearby devices and to tag your SOS with where you are.\n\n• Bluetooth &amp; nearby Wi-Fi — used to form the offline mesh.\n\n• Notifications — so you\'re alerted to an incoming SOS even when the app is in the background.\n\nRescueLink works fully offline and never uploads your data.</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_grant">Grant permissions</string>
+    <string name="profile_name_hint">Display name</string>
+    <string name="profile_blood_hint">Blood group (optional)</string>
+    <string name="profile_medical_hint">Medical note (optional, e.g. allergies)</string>
+
+    <!-- FEAT-08: settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile">Edit profile</string>
+    <string name="settings_mesh_toggle">Mesh networking</string>
+    <string name="settings_mesh_desc">Discover nearby devices and relay messages. Turning this off stops all mesh activity.</string>
+    <string name="settings_battery_saver">Battery saver</string>
+    <string name="settings_battery_desc">Reduce discovery frequency to conserve power. SOS sending is never affected.</string>
+    <string name="settings_clear_history">Clear message history</string>
+    <string name="settings_clear_desc">Permanently delete all stored messages and alerts on this device.</string>
+    <string name="settings_clear_confirm">Delete all messages and alerts? This cannot be undone.</string>
+    <string name="settings_about">About RescueLink</string>
+    <string name="settings_save">Save profile</string>
+    <string name="settings_saved">Profile saved</string>
+    <string name="settings_history_cleared">Message history cleared</string>
+
+    <!-- FEAT-02: mesh status banner + nearby devices -->
+    <string name="mesh_off">Mesh off</string>
+    <string name="mesh_searching">Searching for nearby devices…</string>
+    <string name="mesh_active">Mesh active — %1$d nearby</string>
+    <string name="nearby_devices_title">Nearby devices</string>
+    <string name="nearby_devices_empty">No devices connected yet. Keep the app open and stay near others.</string>
+    <string name="peer_battery">🔋 %1$s</string>
+    <string name="peer_last_seen">seen %1$s ago</string>
+    <string name="peer_last_seen_connected">connected</string>
+
+    <!-- FEAT-04: SOS confirm / cancel / safe / resend -->
+    <string name="sos_hold_hint">Hold the button for 3 seconds to broadcast an emergency alert</string>
+    <string name="sos_holding">HOLD…</string>
+    <string name="sos_undo">UNDO</string>
+    <string name="sos_cancelled">SOS cancelled and retracted from the mesh</string>
+    <string name="sos_im_safe">I am safe</string>
+    <string name="sos_resend">Resend SOS</string>
+    <string name="sos_safe_broadcast">Broadcast: you are safe</string>
+    <string name="sos_resent">SOS re-broadcast from your current location</string>
+    <string name="sos_nothing_to_resend">No previous SOS to resend</string>
+    <string name="sos_acknowledge">I\'m responding</string>
+    <string name="sos_ack_sent">Sent: you are responding</string>
+
+    <!-- FEAT-09: battery-aware mesh -->
+    <string name="mesh_service_text_low_power">Low-power mode — scanning less often to save battery. SOS still works.</string>
+    <string name="low_power_indicator">🔋 Low-power mode</string>
+
+    <!-- FEAT-07: quick-message templates -->
+    <string name="quick_sos">Quick SOS</string>
+    <string name="quick_templates_title">Quick messages</string>
+    <string name="tmpl_trapped">Trapped, need help</string>
+    <string name="tmpl_water_food">Need water/food</string>
+    <string name="tmpl_injured">Injured, cannot move</string>
+    <string name="tmpl_safe_shelter">Safe, sheltering here</string>
+    <string name="cd_send_message">Send message</string>
+    <string name="cd_open_chat">Open mesh chat</string>
+    <string name="cd_open_map">Open disaster map</string>
+    <string name="cd_open_sos">Open SOS emergency screen</string>
+    <string name="cd_open_contacts">Open emergency contacts</string>
+    <string name="cd_quick_sos">Send a Quick SOS in one tap</string>
+
+    <!-- FEAT-05: map legend -->
+    <string name="map_legend">🌊 Flood   🏚️ Earthquake   🔥 Fire   🏥 Medical   🌀 Cyclone   📍 You</string>
+
+    <!-- FEAT-LOC-01: saved locations -->
+    <string name="cat_home">Home</string>
+    <string name="cat_hospital">Hospital</string>
+    <string name="cat_care_center">Care Center</string>
+    <string name="cat_shelter">Shelter</string>
+    <string name="cat_police">Police</string>
+    <string name="cat_water">Water</string>
+    <string name="cat_custom">Custom</string>
+    <string name="saved_places_title">Saved Places</string>
+    <string name="save_place_title">Save this place</string>
+    <string name="save_place_hint">Label (e.g. Home, City Hospital)</string>
+    <string name="save_place_category">Category</string>
+    <string name="save_place_favorite">Pin to top (favorite)</string>
+    <string name="save_place_long_press_hint">Long-press the map to save a place</string>
+    <string name="save_place_saved">Place saved</string>
+    <string name="save_place_needs_label">Enter a label</string>
+    <string name="saved_places_empty">No saved places yet. Long-press the map to add Home, a hospital, or a shelter.</string>
+    <string name="distance_locating">locating…</string>
+    <string name="cd_open_saved_places">Open saved places</string>
+    <string name="cd_edit_place">Edit place</string>
+    <string name="cd_delete_place">Delete place</string>
+    <string name="delete_place_confirm">Delete this saved place?</string>
+    <string name="saved_places_legend">🏠 Home  ➕ Hospital  ❤️ Care  ⛺ Shelter  🛡️ Police  💧 Water  📌 Custom</string>
+
+    <!-- FEAT-SIREN-02: siren -->
+    <string name="siren_active">🔊 SOS siren active</string>
+    <string name="siren_silence">SILENCE</string>
+    <string name="siren_auto_stop">Auto-stops in %1$ds</string>
+    <string name="siren_low_power">Power-saving: siren pulsing slowly</string>
+    <string name="settings_siren_outgoing">Siren on my SOS</string>
+    <string name="settings_siren_outgoing_desc">Sound a pulsing alarm (on the alarm volume, even if the phone is on silent) after you send an SOS, to help rescuers find you.</string>
+    <string name="settings_siren_incoming">Siren on received SOS</string>
+    <string name="settings_siren_incoming_desc">Off by default: a loud alarm when someone else\'s SOS arrives could expose you if you\'re hiding. You always still get a notification and vibration.</string>
+
+    <!-- SH-05: offline tile caching -->
+    <string name="cd_cache_area">Cache this map area for offline use</string>
+    <string name="map_caching">Caching map area…</string>
+    <string name="map_caching_progress">Caching map area… %1$d%%</string>
+    <string name="map_cached">✅ Map area cached for offline use</string>
+    <string name="map_cache_failed">Some tiles could not be cached</string>
+
+    <!-- SH-06: swipe-to-archive -->
+    <string name="alert_archived">Alert archived</string>
+    <string name="archive_only_resolved">Only resolved alerts can be archived</string>
+
+    <!-- BRIDGE-CORE: opportunistic backend bridge -->
+    <string name="bridge_uploaded">Bridged %1$d alert(s) to responders</string>
+    <string name="msg_status_reached">✅ Reached responders</string>
+
+    <!-- TWO-WAY: responder reassurance -->
+    <string name="responder_update_title">Responder update</string>
+</resources>

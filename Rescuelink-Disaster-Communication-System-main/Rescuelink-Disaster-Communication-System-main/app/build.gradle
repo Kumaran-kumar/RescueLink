@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.rescuelink.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.rescuelink.app"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        // BRIDGE-CORE: opportunistic bridge target. Set to the machine's LAN IP:8000 for
+        // on-device testing. The app MUST build and run with this unreachable (offline-first).
+        buildConfigField "String", "BACKEND_URL", "\"http://10.0.2.2:8000\""
+        buildConfigField "String", "BACKEND_TOKEN", "\"demo-token\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+}
+
+dependencies {
+    // AndroidX Core
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core:1.15.0'
+    // UI-05: Android 12 SplashScreen API (back-ported to API 23+)
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.3.0'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    // Lifecycle (ViewModel + LiveData)
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.7'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.7'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.8.7'
+    implementation 'androidx.lifecycle:lifecycle-service:2.8.7'
+
+    // Room Database
+    implementation 'androidx.room:room-runtime:2.6.1'
+    annotationProcessor 'androidx.room:room-compiler:2.6.1'
+
+    // Google Nearby Connections
+    implementation 'com.google.android.gms:play-services-nearby:19.3.0'
+
+    // Open Source Maps (osmdroid)
+    implementation 'org.osmdroid:osmdroid-android:6.1.18'
+    // SH-05: RadiusMarkerClusterer for zoomed-out marker clustering
+    implementation 'com.github.MKergall:osmbonuspack:6.9.0'
+
+    // Google Location Services
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+    // WorkManager
+    implementation 'androidx.work:work-runtime:2.10.0'
+
+    // Gson for JSON serialization
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    // BRIDGE-CORE: HTTP client for the opportunistic backend bridge
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+
+    // SwipeRefreshLayout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // Activity
+    implementation 'androidx.activity:activity:1.9.3'
+}

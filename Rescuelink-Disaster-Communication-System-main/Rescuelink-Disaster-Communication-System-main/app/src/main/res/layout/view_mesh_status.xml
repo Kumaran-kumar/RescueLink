@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FEAT-02: slim, glanceable mesh status banner. Include at the top of any screen and
+    drive it with MeshStatusController. Tapping it opens the nearby-devices sheet.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meshStatusBanner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/background_surface"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/meshStatusDot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circle_status" />
+
+    <TextView
+        android:id="@+id/meshStatusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/mesh_searching"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="›"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp" />
+</LinearLayout>
